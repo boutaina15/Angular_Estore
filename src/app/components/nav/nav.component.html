@@ -1,0 +1,43 @@
+<header>
+
+  <div class="top-header">
+    <div class="logo">
+      <img src="../assets/images/test.jpg" alt="Logo" />
+      <span>technoshop</span>
+    </div>
+    <div class="search-bar">
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+        <input type="text" placeholder="lenovo" />
+      </div>
+    </div>
+    <div class="icons">
+      <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="user-icon">
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </div>
+  </div>
+  <nav class="nav-menu"
+    style="background-color: #600c8c; width: 38%; margin-left: 33%;margin-bottom: 8px;color: white; border-radius: 10px;">
+    <ul>
+      <li class="nav-item dropdown" (mouseenter)="dropdownOpen = true" (mouseleave)="dropdownOpen = false">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+          aria-expanded="false">Categories</a>
+        <div class="dropdown-menu" [ngClass]="{ 'show': dropdownOpen }">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+      <li>Exclusive web</li>
+      <li>Promotions</li>
+      <li>Our brands</li>
+      <li>Our services</li>
+    </ul>
+  </nav>
+</header>

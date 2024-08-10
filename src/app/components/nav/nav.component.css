@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons .cart-icon,
+  .icons .user-icon {
+    margin-left: 20px;
+  }
+  
+  .icons img {
+    height: 24px;
+  }
+  
+  .nav-menu {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-menu ul li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-menu ul li:last-child {
+    margin-right: 0;
+  }

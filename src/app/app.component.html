@@ -1,0 +1,41 @@
+<app-nav></app-nav>
+
+
+<body>
+  <!-- Carousel -->
+  <div id="customCarousel" class="carousel slide" [ngClass]="{ 'carousel-fade': true }">
+    <div class="carousel-inner">
+      <div *ngFor="let num of [0,1,2]" [ngClass]="{ 'carousel-item': true, 'active': num === currentIndex }">
+        <div class="row">
+          <div class="card col-md-3" *ngFor="let item of carouselItems;">
+            <div class="card-body">
+              <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
+            </div>
+            <div class="card-title">
+              {{item.title}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel Buttons -->
+    <a class="carousel-control-prev" role="button" (click)="prev()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" role="button" (click)="next()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <div class="row" style="margin-top: 4%;">
+    <div class="col-md-2 card">
+      helloooooo
+    </div>
+    <div class="col-md-10 card">
+      hiiiiiiiii
+    </div>
+  </div>
+
+</body>
