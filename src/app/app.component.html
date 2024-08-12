@@ -3,39 +3,40 @@
 
 <body>
 
-<!-- breadcrumb -->
+  <!-- breadcrumb -->
 
-<ul class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li>Laptop</li>
-</ul>
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li>Laptop</li>
+  </ul>
 
   <!-- Carousel -->
-  <div id="customCarousel" class="carousel slide" [ngClass]="{ 'carousel-fade': true }">
-    <div class="carousel-inner">
-      <div *ngFor="let num of [0,1,2]" [ngClass]="{ 'carousel-item': true, 'active': num === currentIndex }">
-        <div class="row" style="margin-top: 15px; margin-right:180px; margin-left: 600px; margin-bottom: 60px; width: 400px; height: 380px;">
-          <div class="card col-md-3" *ngFor="let item of carouselItems;">
+  <div id="customCarousel" class="carousel slide">
+    <div class="carousel-inner" style="display: flex; justify-content: center; align-items: center;">
+      <div class="row" style="width: 30%; height: 50%;">
+        <ng-container *ngFor="let item of currentPageItems" class="carousel-item">
+          <div class="card col-md-4">
             <div class="card-body">
-              <img [src]="item.src" class="d-block w-100" [alt]="item.alt" >
+              <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
             </div>
             <div class="card-title" style="font-size: smaller; text-align: center;">
               {{item.title}}
             </div>
           </div>
-        </div>
+        </ng-container>
       </div>
     </div>
     <!-- Carousel Buttons -->
     <a class="carousel-control-prev" role="button" (click)="prev()">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgb(194, 196, 194);"></span>
       <span class="visually-hidden">Previous</span>
     </a>
     <a class="carousel-control-next" role="button" (click)="next()">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgb(194, 196, 194);"></span>
       <span class="visually-hidden">Next</span>
     </a>
   </div>
+
 
   <div class="row" style="margin-top: 4%;">
     <div class="col-md-2 card">

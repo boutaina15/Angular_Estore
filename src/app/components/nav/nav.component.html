@@ -20,24 +20,27 @@
       </div>
     </div>
   </div>
-  <nav class="nav-menu"
-    style="background-color: #600c8c; width: 38%; margin-left: 33%;margin-bottom: 8px;color: white; border-radius: 10px;">
-    <ul>
-      <li class="nav-item dropdown" (mouseenter)="dropdownOpen = true" (mouseleave)="dropdownOpen = false">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">Categories</a>
-        <div class="dropdown-menu" [ngClass]="{ 'show': dropdownOpen }">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
-      <li>Exclusive web</li>
-      <li>Promotions</li>
-      <li>Our brands</li>
-      <li>Our services</li>
-    </ul>
-  </nav>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <nav class="nav-menu"
+      style="background-color: #600c8c; width: 38%;margin-bottom: 8px;color: white; border-radius: 10px;">
+      <ul>
+        <li class="nav-item dropdown" (mouseenter)="dropdownOpen = true" (mouseleave)="dropdownOpen = false">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Categories</a>
+          <div class="dropdown-menu" [ngClass]="{ 'show': dropdownOpen }">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li>Exclusive web</li>
+        <li>Promotions</li>
+        <li>Our brands</li>
+        <li>Our services</li>
+      </ul>
+    </nav>
+  </div>
 </header>
