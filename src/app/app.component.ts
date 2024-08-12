@@ -11,10 +11,16 @@ export class AppComponent {
 
   currentIndex = 0;
   carouselItems = [
-    { src: '../assets/images/phone.jpg', alt: 'First slide', title:'phone' },
-    { src: '../assets/images/test.jpg', alt: 'Second slide', title:'test' },
-    { src: '../assets/images/slide3.jpg', alt: 'Third slide', title:'hv' },
-    { src: '../assets/images/phone.jpg', alt: 'First slide', title:'phoneé' }
+    { src: '../assets/images/phone.jpg', alt: 'Phone', title:'Phone' },
+    { src: '../assets/images/Laptop.jpg', alt: 'Laptop', title:'Laptop' },
+    { src: '../assets/images/Tablette.jpg', alt: 'Tablette', title:'Tablette' },
+    { src: '../assets/images/Headphones.jpg', alt: 'Headphone', title:'Headphone' },
+    { src: '../assets/images/Watch.jpeg', alt: 'Watch', title:'Watch' },
+    { src: '../assets/images/Camera.webp', alt: 'Camera', title:'Camera' },
+    { src: '../assets/images/gaming.jpg', alt: 'Gaming', title:'Gaming' },
+    { src: '../assets/images/modem.jpg', alt: 'Modem', title:'Modem' },
+    { src: '../assets/images/accessories.jpg', alt: 'Accessories', title:'Accessories' }
+  
   ];
 
   prev() {
@@ -28,4 +34,5 @@ export class AppComponent {
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
   }
+  
 }
