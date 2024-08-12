@@ -14,12 +14,12 @@
   <div id="customCarousel" class="carousel slide" [ngClass]="{ 'carousel-fade': true }">
     <div class="carousel-inner">
       <div *ngFor="let num of [0,1,2]" [ngClass]="{ 'carousel-item': true, 'active': num === currentIndex }">
-        <div class="row">
+        <div class="row" style="margin-top: 15px; margin-right:180px; margin-left: 600px; margin-bottom: 60px; width: 400px; height: 380px;">
           <div class="card col-md-3" *ngFor="let item of carouselItems;">
             <div class="card-body">
-              <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
+              <img [src]="item.src" class="d-block w-100" [alt]="item.alt" >
             </div>
-            <div class="card-title">
+            <div class="card-title" style="font-size: smaller; text-align: center;">
               {{item.title}}
             </div>
           </div>
