@@ -1,0 +1,243 @@
+
+ .carousel-item {
+    transition: transform 0.6s ease-in-out;
+  }
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white;
+  }
+  
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+  }
+  
+ 
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #600c8c;
+    content: ">\00a0";
+  }
+  
+ 
+  ul.breadcrumb li a {
+    color: grey;
+    text-decoration: none;
+  }
+  
+  
+  ul.breadcrumb li a:hover {
+    color: #600c8c;
+    text-decoration: underline;
+  }
+  
+  body{
+      background: #fefefe;
+      
+  }
+  
+  #fs_app{
+      padding: 10px 15px 0;
+  }
+  
+  #fs_app > section:not(#fs_header_bar){
+      padding-top: 25px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+  }
+  
+  #fs_header_bar{
+      padding-top: 25px;
+      padding-bottom: 0;
+  }
+  
+  #fs_page_title{
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-left: -15px;
+  }
+  
+  .heading{
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+  }
+  
+  .btn{
+      width: 100%;
+      background: transparent;
+      border: 1px solid #600c8c;
+      border-radius: 2px;
+      padding: 3px;
+      color: #600c8c;
+      font-size: 14px;
+      font-weight: 300 !important;
+      margin-top: 15px;
+      margin-bottom: 20px;
+  }
+  
+  .active .btn{
+      background: #600c8c;
+      color: #fff;
+  }
+  
+  #fs_price_body .line1{
+      height: 2px;
+      width: 100%;
+      background: #eee;
+  }
+  
+  #fs_price_body .line{
+      position: absolute;
+      height: 2px;
+      width: 45%;
+      background: #600c8c;
+      left: 9%;
+  }
+  
+  #fs_price_body .line:before{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 6px;
+      width: 6px;
+      background: #600c8c;
+      border-radius: 50%;
+      left: -2px;
+      top: -2px;
+  }
+  
+  #fs_price_body .line:after{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 6px;
+      width: 6px;
+      background: #600c8c;
+      border-radius: 50%;
+      right: -2px;
+      bottom: -2px;
+  }
+  
+  #fs_price_body ul{
+      padding: 0;
+      margin-top: 20px;
+      margin-bottom: 0;
+  }
+  
+  #fs_price_body ul li{
+      list-style: none;
+      display: inline-block;
+      color: #d4d4d4;
+  }
+  
+  #fs_price_body ul li:last-child{
+      float: right;
+  }
+  
+  #fs_brand_body ul{
+      padding: 0;
+      display: block;
+      margin-top: 15px;
+  }
+  
+  #fs_brand_body ul li{
+      list-style: none;
+      margin-bottom: 18px;
+      font-size: 13px;
+      font-weight: 400;
+  }
+  
+  #fs_brand_body .text-right{
+      float: right;
+      height: 13px;
+      width: 13px;
+      border: 1px solid #999;
+      margin-top: 3px;
+  }
+  
+  #fs_brand_body li.active span:first-child{
+      color: #600c8c;
+  }
+  
+  #fs_brand_body li.active span:last-child{
+      background: #600c8c;
+      color: #fff;
+      border: 1px solid #600c8c;
+      font-size: 10px;
+      line-height: 100%;
+      text-align: center;
+  }
+  
+  #fs_color_body ul{
+      padding: 0;
+      display: block;
+      margin-top: 15px;
+  }
+  
+  #fs_color_body ul li{
+      list-style: none;
+      margin-bottom: 18px;
+      font-size: 13px;
+      font-weight: 400;
+  }
+  
+  #fs_color_body .text-right{
+      float: right;
+      height: 13px;
+      width: 13px;
+      border: 1px solid #999;
+      margin-top: 3px;
+  }
+  
+  #fs_color_body li.active span:first-child{
+      color: #600c8c;
+  }
+  
+  #fs_color_body li.active span:last-child{
+      background: #600c8c;
+      color: #fff;
+      border: 1px solid #600c8c;
+      line-height: 100%;
+      text-align: center;
+      font-size: 10px;
+  }
+  
+  #fs_rating ul{
+      padding: 0;
+      display: block;
+      margin-top: 15px;
+  }
+  
+  #fs_rating ul li{
+      list-style: none;
+      margin-bottom: 18px;
+      font-size: 13px;
+      font-weight: 400;
+  }
+  
+  #fs_rating .text-right{
+      float: right;
+      height: 13px;
+      width: 13px;
+      border: 1px solid #999;
+      margin-top: 3px;
+  }
+  
+  #fs_rating i{
+      color: #eee;
+  }
+  
+  #fs_rating i.dark{
+      color: #600c8c;
+  }
+  
+  #fs_rating{
+      border: none !important;
+  }
+  
+  

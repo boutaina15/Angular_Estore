@@ -2,18 +2,19 @@
 
   <div class="top-header">
     <div class="logo">
-      <img src="../assets/images/test.jpg" alt="Logo" />
-      <span>technoshop</span>
+      <img src="../assets/images/test.png" alt="Logo" />
+      <span style="color: white; font-size: 25px; font-weight: 500;text-transform: uppercase; font-family: 'Denmark',serif;">technoshop</span>
     </div>
     <div class="search-bar">
-      <div class="input-group">
-        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-        <input type="text" placeholder="lenovo" />
-      </div>
-    </div>
+      <input type="text" placeholder="Type a product or category">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
     <div class="icons">
       <div class="cart-icon">
         <i class="fa-solid fa-cart-shopping"></i>
+      </div> 
+      <div class="favorite-icon">
+        <i class="fa-solid fa-heart"></i>
       </div>
       <div class="user-icon">
         <i class="fa-solid fa-user"></i>
@@ -21,11 +22,16 @@
     </div>
   </div>
   <nav class="nav-menu"
-    style="background-color: #600c8c; width: 38%; margin-left: 33%;margin-bottom: 8px;color: white; border-radius: 10px;">
+    style="background-color: #f9f9f9; display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;">
     <ul>
       <li class="nav-item dropdown" (mouseenter)="dropdownOpen = true" (mouseleave)="dropdownOpen = false">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">Categories</a>
+          aria-expanded="false" style=" background-color: #b084c4; 
+          padding: 5px 10px;
+          border-radius: 20px;">Categories</a>
         <div class="dropdown-menu" [ngClass]="{ 'show': dropdownOpen }">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
