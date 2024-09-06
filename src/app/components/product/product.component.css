@@ -113,6 +113,7 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
   }
   
   .category-card h3 {
@@ -383,6 +384,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 1.5s;
+    cursor: pointer;
   }
 
   .product:hover{

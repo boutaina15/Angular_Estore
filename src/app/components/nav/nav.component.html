@@ -2,14 +2,23 @@
 
   <div class="top-header">
     <div class="logo">
-      <img src="../assets/images/test.png" alt="Logo" />
-      <span style="color: white; font-size: 25px; font-weight: 500;text-transform: uppercase; font-family: 'Denmark',serif;">technoshop</span>
+     <h4 style="color: white; padding-left: 65px;cursor: pointer;"><b>TECHNOSHOP</b></h4>
+     
     </div>
-    <div class="search-bar">
-      <input type="text" placeholder="Type a product or category">
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
-  </div>
+
+   
+   
     <div class="icons">
+
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      
+  
+      <div class="separator" style="color: aliceblue; list-style: none;">|</div>
       <div class="cart-icon">
         <i class="fa-solid fa-cart-shopping"></i>
       </div> 
@@ -19,31 +28,15 @@
       <div class="user-icon">
         <i class="fa-solid fa-user"></i>
       </div>
+
+      <div class="box">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+      
     </div>
   </div>
-  <nav class="nav-menu"
-    style="background-color: #f9f9f9; display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;">
-    <ul>
-      <li class="nav-item dropdown" (mouseenter)="dropdownOpen = true" (mouseleave)="dropdownOpen = false">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false" style=" background-color: #b084c4; 
-          padding: 5px 10px;
-          border-radius: 20px;">Categories</a>
-        <div class="dropdown-menu" [ngClass]="{ 'show': dropdownOpen }">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
-        </div>
-      </li>
-      <li>Exclusive web</li>
-      <li>Promotions</li>
-      <li>Our brands</li>
-      <li>Our services</li>
-    </ul>
-  </nav>
+  
 </header>

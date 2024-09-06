@@ -1,8 +1,8 @@
 header {
   display: flex;
   flex-direction: column;
-  background-color: #1f032f;
-  border-bottom: 1px solid #ccc;
+  background-color: #1d1c1c;
+
 }
 
 .top-header {
@@ -19,66 +19,79 @@ header {
   
 }
 
-.logo img {
-  height: 85px;
-  margin-right: 10px;
-  width: 100px;
-}
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 5px 10px;
-  width: 500px;
-}
-
-.search-bar input[type="text"] {
-  border: none;
-  outline: none;
-  flex-grow: 1;
-  padding: 5px;
-}
-
-.search-bar button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
 
 .icons {
   display: flex;
   align-items: center;
+  padding-right: 60px;
 }
 
 .icons .cart-icon,
-.icons .user-icon, 
+.icons .user-icon, .icons .box, .icons .separator, 
 .icons .favorite-icon {
   margin-left: 20px;
   color: white;
+  cursor: pointer;
+}
+
+.icons .cart-icon:hover,
+.icons .user-icon:hover,
+.icons .favorite-icon:hover{
+  color: orange;
 }
 
 .icons img {
   height: 24px;
 }
 
-.nav-menu {
-  background-color: #f7f7f7;
-  padding: 10px 20px;
-}
+  .icons ul li{
+   list-style: none;
+   color: white;
+   margin-left: 24px;
+   display: inline-block;
+   margin-top: 6px;
+   cursor: pointer;
+  }
+  .icons ul li:hover{
+    color: orange;
+    text-decoration: underline;
+  }
+  .icons ul li:active{
+    color: orange;
+    text-decoration: underline;
+  }
 
-.nav-menu ul {
+.box{
+  height: 27px;
+ 
   display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-
-.nav-menu ul li {
-  margin-right: 20px;
   cursor: pointer;
+  padding: 10px 8px;
+  background: #fff;
+  border-radius: 30px;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 3);
 }
 
-.nav-menu ul li:last-child {
-  margin-right: 0;
+.box:hover input{
+  width: 400px;
+}
+
+.box input{
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+ 
+.box a .fa-solid {
+  color: orange;
+  font-size: 16px;
+}
+
+.box:active { 
+  Width: 400px
 }
