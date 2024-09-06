@@ -1,208 +1,200 @@
-<body>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Get Macbook Pro A Touch Of Genuis</h1>
+        <p>Up To 60% Off on your first order.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+</section>
 
-    <!-- breadcrumb -->
-  
-    <ul class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li>Laptop</li>
-    </ul>
-  
-    <!-- Carousel -->
-    <div id="customCarousel" class="carousel slide">
-        <div class="carousel-inner" style="display: flex; justify-content: center; align-items: center;">
-          <div class="row" style="width: 30%; height: 50%;">
-            <ng-container *ngFor="let item of currentPageItems" class="carousel-item">
-              <div class="card col-md-4">
-                <div class="card-body">
-                  <img [src]="item.src" class="d-block w-100" [alt]="item.alt">
+
+<!-- Categories Section -->
+<section class="categories">
+   <div class="browse"><b><h5>Browse By Category</h5></b></div> 
+    <div class="container">
+        <button class="scroll-btn left" (click)="scrollLeft()">&#10094;</button>
+        <div class="carousel-container" #carouselContainer>
+            <div class="category-card" *ngFor="let category of categories">
+                <div class="image-box">
+                    <img [src]="category.image" [alt]="category.name">
                 </div>
-                <div class="card-title" style="font-size: smaller; text-align: center;">
-                  {{item.title}}
-                </div>
-              </div>
-            </ng-container>
-          </div>
+                <h3 style="font-size: 75%;">{{ category.name }}</h3>
+            </div>
         </div>
-        <!-- Carousel Buttons -->
-        <a class="carousel-control-prev" role="button" (click)="prev()">
-          <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgb(194, 196, 194);"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" role="button" (click)="next()">
-          <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgb(194, 196, 194);"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-      
-  
-  
-    <div class="row"  >
-      <div class="col-md-2 card" style="margin-top: 4%; margin-left: 40px; margin-right: 40px;">
-  
-        <!-- filter -->
-        <div class="container-fluid">
-          <div class="row" id="fs_app">
-              
-              <section class="col-12" id="fs_header_bar">
-                  <div class="row">
-                      <div class="col-2">
-                          <i class="fa fa-chevron-left"></i>
-                      </div>
-                      <div class="col-10" id="fs_page_title">
-                          Filter
-                      </div>
-                  </div>
-              </section>
-  
-              <section class="col-12" id="fs_price_body">
-                  <div>
-                      <span class="heading">
-                          By Price
-                      </span>
-                      <div class="row">
-                          <div class="col-4">
-                              <button class="btn" type="button">&dollar;</button>
-                          </div>
-                          <div class="col-4 active">
-                              <button class="btn" type="button">&dollar;&dollar;</button>
-                          </div>
-                          <div class="col-4">
-                              <button class="btn" type="button">&dollar;&dollar;&dollar;</button>
-                          </div>
-                      </div>
-                      <div class="line"></div>
-                      <div class="line1"></div>
-                      <div>
-                          <ul>
-                              <li>$25</li>
-                              <li>$50</li>
-                          </ul>
-                      </div>
-                  </div>
-              </section>
-  
-              <section class="col-12" id="fs_brand_body">
-                  <span class="heading">
-                      By Brand
-                  </span>
-                  <div class="contents">
-                      <ul>
-                          <li>
-                              <span>Lenovo</span>
-                              <span class="text-right"></span>
-                          </li>
-                          <li class="active">
-                              <span>Dell</span>
-                              <span class="text-right">
-                                  <i class="fa fa-check"></i>
-                              </span>
-                          </li>
-                          <li>
-                              <span>Asus</span>
-                              <span class="text-right"></span>
-                          </li>
-                      </ul>
-                  </div>
-              </section>
-  
-              <section class="col-12" id="fs_color_body">
-                  <span class="heading">
-                      By Color
-                  </span>
-                  <div class="contents">
-                      <ul>
-                          <li>
-                              <span>Black</span>
-                              <span class="text-right"></span>
-                          </li>
-                          <li>
-                              <span>Silver</span>
-                              <span class="text-right"></span>
-                          </li>
-                          <li class="active">
-                              <span>White</span>
-                              <span class="text-right">
-                                  <i class="fa fa-check"></i>
-                              </span>
-                          </li>
-                      </ul>
-                  </div>
-              </section>
-  
-              <section class="col-12" id="fs_rating">
-                  <span class="heading">
-                      By Rating
-                  </span>
-                  <div class="contents">
-                      <ul>
-                          <li>
-                              <span>
-                                  <i class="fa fa-star dark"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                              </span>
-                              <span class="text-right"></span>
-                          </li>
-                          <li>
-                              <span>
-                                  <i class="fa fa-star dark"></i>
-                                  <i class="fa fa-star dark"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                                  <i class="fa fa-star"></i>
-                              </span>
-                              <span class="text-right"></span>
-                          </li>
-                          <li>
-                            <span>
-                                <i class="fa fa-star dark"></i>
-                                <i class="fa fa-star dark"></i>
-                                <i class="fa fa-star dark"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+        <button class="scroll-btn right" (click)="scrollRight()">&#10095;</button>
+    </div>
+</section>
+
+
+<!-- Filter Section -->
+ <body class="body">
+    
+
+<div class="filter_container">
+        <aside class="filters">
+            <div class="container-fluid">
+                <div class="row" id="fs_app">
+                    
+                    <section class="col-12" id="fs_header_bar">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <div class="col-10" id="fs_page_title">
+                                Filter
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="col-12" id="fs_price_body">
+                        <div>
+                            <span class="heading">
+                                By Price
                             </span>
-                            <span class="text-right"></span>
-                        </li>
-                        <li>
-                          <span>
-                              <i class="fa fa-star dark"></i>
-                              <i class="fa fa-star dark"></i>
-                              <i class="fa fa-star dark"></i>
-                              <i class="fa fa-star dark"></i>
-                              <i class="fa fa-star"></i>
-                          </span>
-                          <span class="text-right"></span>
-                      </li>
-                      <li>
-                        <span>
-                            <i class="fa fa-star dark"></i>
-                            <i class="fa fa-star dark"></i>
-                            <i class="fa fa-star dark"></i>
-                            <i class="fa fa-star dark"></i>
-                            <i class="fa fa-star dark"></i>
+                            <div class="row">
+                                <div class="col-4">
+                                    <button class="btn1" type="button">&dollar;</button>
+                                </div>
+                                <div class="col-4 active">
+                                    <button class="btn1" type="button">&dollar;&dollar;</button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn1" type="button">&dollar;&dollar;&dollar;</button>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="line1"></div>
+                            <div>
+                                <ul>
+                                    <li>$25</li>
+                                    <li>$50</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="col-12" id="fs_brand_body">
+                        <span class="heading">
+                            By Brand
                         </span>
-                        <span class="text-right"></span>
-                    </li>
-  
-                      </ul>
-                  </div>
-              </section>
-  
-          </div>
-      </div>
-  
-  
-      </div>
-      <div class="col-md-8 card" style="margin-top: 4%; margin-left: 50px; margin-right: 50px; ">
-     <!-- cards -->
-        test
+                        <div class="contents">
+                            <ul>
+                                <li>
+                                    <span>Lenovo</span>
+                                    <span class="text-right"></span>
+                                </li>
+                                <li class="active">
+                                    <span>Dell</span>
+                                    <span class="text-right">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>Asus</span>
+                                    <span class="text-right"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+        
+                    <section class="col-12" id="fs_color_body">
+                        <span class="heading">
+                            By Color
+                        </span>
+                        <div class="contents">
+                            <ul>
+                                <li>
+                                    <span>Black</span>
+                                    <span class="text-right"></span>
+                                </li>
+                                <li>
+                                    <span>Silver</span>
+                                    <span class="text-right"></span>
+                                </li>
+                                <li class="active">
+                                    <span>White</span>
+                                    <span class="text-right">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+        
+                    <section class="col-12" id="fs_rating">
+                        <span class="heading">
+                            By Rating
+                        </span>
+                        <div class="contents">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <i class="fa fa-star dark"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="text-right"></span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="fa fa-star dark"></i>
+                                        <i class="fa fa-star dark"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                    <span class="text-right"></span>
+                                </li>
+                                <li>
+                                  <span>
+                                      <i class="fa fa-star dark"></i>
+                                      <i class="fa fa-star dark"></i>
+                                      <i class="fa fa-star dark"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                  </span>
+                                  <span class="text-right"></span>
+                              </li>
+                              <li>
+                                <span>
+                                    <i class="fa fa-star dark"></i>
+                                    <i class="fa fa-star dark"></i>
+                                    <i class="fa fa-star dark"></i>
+                                    <i class="fa fa-star dark"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                                <span class="text-right"></span>
+                            </li>
+                            <li>
+                              <span>
+                                  <i class="fa fa-star dark"></i>
+                                  <i class="fa fa-star dark"></i>
+                                  <i class="fa fa-star dark"></i>
+                                  <i class="fa fa-star dark"></i>
+                                  <i class="fa fa-star dark"></i>
+                              </span>
+                              <span class="text-right"></span>
+                          </li>
+        
+                            </ul>
+                        </div>
+                    </section>
+        
+                </div>
+            </div>
+        </aside>
+    <!-- Product Section -->
+  <section class="products">
+        <div class="product" *ngFor="let product of products">
+            <img [src]="product.image" [alt]="product.name">
+            <h3>{{ product.name }}</h3>
+            <p class="price">{{ product.price }} $</p>
+            <button class="buy-now">Buy now</button>
+        </div> 
+        
+    </section>
 
-        </div>
-     
-      
-      </div>
-   
-  
-  </body>
+</div>
+</body>
