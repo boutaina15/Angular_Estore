@@ -1,11 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ProductComponent } from './components/product/product.component';
+import { ProductComponent } from './components/product_listing/product.component';
+import { BoughtComponent } from './components/bought/bought.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CategoryComponent } from './components/category/category.component';
+import { CommentComponent } from './components/comment/comment.component';
+import { ConfigurationComponent } from './components/configuration/configuration.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { UserComponent } from './components/user/user.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 
 @NgModule({
@@ -14,9 +23,19 @@ import { ProductComponent } from './components/product/product.component';
     NavComponent,
     FooterComponent,
     ProductComponent,
+    BoughtComponent,
+    CartComponent,
+    CategoryComponent,
+    CommentComponent,
+    ConfigurationComponent,
+    GalleryComponent,
+    UserComponent,
+    WishlistComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

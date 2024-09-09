@@ -1,0 +1,360 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bdbdbd;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+   
+}
+
+/* Banner Section */
+.banner-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    
+}
+
+.banner-content .btn {
+    padding: 8px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .banner-content .btn:hover{
+    background-color: #515050;
+  }
+
+.small-banners {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.small-banner,
+.large-banner {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.small-banner img,
+.large-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 60px;
+    left: 195px;
+    color: white;
+}
+
+.large-banner {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Category Section */
+.category-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category {
+   
+        text-align: center;
+        flex: 0 0 auto;
+        width: 9%; 
+        margin-right: 20px;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform .5s;
+        cursor: pointer;
+    
+}
+
+.category:hover{
+    transform: scale(1.1);
+  }
+
+
+.categorys h3 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+.category img {
+    width: 80px;
+    height: 80px;
+}
+.image-box {
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+  }
+  
+  .image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  
+  
+  
+/* Product Carousel */
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.product-carousel {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.product {
+   
+    text-align: center;
+    flex: 0 0 auto;
+    width: 20%; 
+    margin-right: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform .5s;
+
+}
+
+.product h3 {
+margin-top: 10px;
+font-size: 16px;
+}
+
+.product img {
+width: 10px;
+height: 10px;
+}
+.images-box {
+width: 100%;
+padding-top: 100%; 
+position: relative;
+}
+
+.images-box img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 4px;
+}
+
+.product .buy{
+    padding: 8px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.latest .buy:hover{
+    background-color: orange;
+    color: #333;
+    border-color: orange;
+}
+
+.product:hover{
+    transform: scale(1.1);
+  }
+
+/* Discount Banner */
+.discount-banner {
+    background-color: white;
+    color: white;
+    padding: 15px;
+  
+   
+    text-align: center;
+    margin: 20px 0;
+}
+
+.discount-banner h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+.discount-content{
+    align-content: center;
+    background-color: orange;
+}
+/* Latest Products */
+.latest-carousel {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.latest-carousel {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.latest {
+   
+    text-align: center;
+    flex: 0 0 auto;
+    width: 20%; 
+    margin-right: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform .5s;
+
+}
+
+.latest h3 {
+margin-top: 10px;
+font-size: 16px;
+}
+
+.latest img {
+width: 10px;
+height: 10px;
+}
+.images-box {
+width: 100%;
+padding-top: 100%; 
+position: relative;
+}
+
+.images-box img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 4px;
+}
+
+.latest .buy{
+    padding: 8px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.latest .buy:hover{
+    background-color: orange;
+    color: #333;
+    border-color: orange;
+}
+
+.latest:hover{
+    transform: scale(1.1);
+  }
+
+/* Discount Banner */
+.latest-banner {
+    background-color: white;
+    color: white;
+    padding: 15px;
+  
+   
+    text-align: center;
+    margin: 20px 0;
+}
+
+.latest-banner h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+.latest-content{
+    align-content: center;
+    background-color: rgb(47, 47, 47);
+}
+
+/* Footer Banner */
+.footer-banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.footer-banner-item{
+    margin-right: 20px;
+}
+
+.footer-banner-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Sponsor Section */
+.sponsor-section {
+    padding: 40px;
+    background-color: white; 
+    text-align: center;
+}
+
+.sponsor-section h2 {
+    font-size: 2rem;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.sponsor {
+    flex: 1 1 150px; 
+    max-width: 150px; 
+}
+
+.sponsor img {
+    width: 100%;
+    height: auto; 
+    opacity: 0.8; 
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.sponsor img:hover {
+    opacity: 1; 
+}
