@@ -422,6 +422,19 @@ body {
   .buy-now:hover {
     background-color: #FF6347; 
   }
+
+  .wish {
+  
+   
+   font-size: 17px;
+   color: rgb(65, 65, 65);
+   text-align: right ;
+  }
+
+  .wish:hover{
+    color: #FF7F50;
+  }
+  
   
   /* Responsive */
   @media (max-width: 768px) {

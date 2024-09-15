@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.product-page {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-images .main-image {
+    width: 400px;
+    height: auto;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+
+
+
+.image-gallery img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 20px;
+    color: #555;
+}
+
+.product-details .description {
+    margin-top: 10px;
+}
+
+.add-to-cart {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: orange;
+    color: #333;
+}
+
+.specifications {
+    margin-top: 30px;
+}
+
+.specifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.specifications ul li {
+    margin-bottom: 5px;
+}
+
+.reviews {
+    margin-top: 30px;
+}
+
+.reviews .review {
+    margin-bottom: 15px;
+}
+
+.similar-products {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.similar-products h2 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.similar-products .product {
+    width: 24%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.similar-products .product:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.similar-products img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.similar-products p {
+    font-size: 14px;
+    color: #333;
+}
+
+.wish {
+  
+   
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    text-align: right ;
+   }
+ 
+   .wish:hover{
+     color: #FF7F50;
+   }
+
+   .product .price {
+    color: #FF7F50; 
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .buy-now {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-now:hover {
+    background-color: #FF6347; 
+  }

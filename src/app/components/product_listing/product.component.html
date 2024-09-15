@@ -188,6 +188,7 @@
     <!-- Product Section -->
   <section class="products">
         <div class="product" *ngFor="let product of products">
+            <div class="wish"><i class="fa-regular fa-heart" ></i></div>
             <img [src]="product.image" [alt]="product.name">
             <h3>{{ product.name }}</h3>
             <p class="price">{{ product.price }} $</p>

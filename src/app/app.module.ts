@@ -15,6 +15,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { UserComponent } from './components/user/user.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
     UserComponent,
     WishlistComponent,
     LandingPageComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
