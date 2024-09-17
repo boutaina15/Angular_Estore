@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Cart Page Styling */
+.cart-page {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.wishlist-page {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.fa-solid{
+    font-size:15px;
+    margin-right:12px;
+}
+
+.sidebar-menu li.active a {
+    color: orange;
+    font-weight: bold;
+}
+
+.sidebar-menu li a:hover {
+    color: orange;
+}
+
+.logout {
+    color: red;
+    font-weight: bold;
+}
+/* Gift Card Main Content */
+.empty-gift-card {
+    text-align: center;
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Empty Wishlist */
+.empty-gift-card {
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 10px;
+    color: #666;
+}
+
+.empty-gift-card h2 {
+    font-size: 28px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.empty-gift-card p {
+    font-size: 18px;
+}
+
+.empty-gift-card img {
+    width: 150px;
+    margin-top: 20px;
+}
