@@ -16,6 +16,8 @@ import { UserComponent } from './components/user/user.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { WishlistPageComponent } from './wishlist-page/wishlist-page.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     WishlistComponent,
     LandingPageComponent,
     ProductDetailsComponent,
+    WishlistPageComponent,
+    CartPageComponent,
   ],
   imports: [
     BrowserModule,
